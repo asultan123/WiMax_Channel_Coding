@@ -1,0 +1,7 @@
+start_rapid_recompile:s:00:03:29
+start_analysis_synthesis_rr:s:00:00:34-start_rapid_recompile
+start_analysis_elaboration_rr:s-start_rapid_recompile
+start_partition_merge_rr:s:00:00:10-start_rapid_recompile
+start_fitter_rr:s:00:00:38-start_rapid_recompile
+start_assembler_rr:s:00:01:11-start_rapid_recompile
+start_timing_analyzer_rr:s:00:00:34-start_rapid_recompile

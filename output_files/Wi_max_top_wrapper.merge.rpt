@@ -1,0 +1,177 @@
+Partition Merge report for Wi_max_top_wrapper
+Wed Feb 27 21:31:49 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Rapid Recompile Summary
+  5. Partition Merge Rapid Recompile Table of Changed Logic Entities
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Wed Feb 27 21:31:49 2019           ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
+; Revision Name                   ; Wi_max_top_wrapper                              ;
+; Top-level Entity Name           ; Wi_max_top_wrapper                              ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; 710 / 18,480 ( 4 % )                            ;
+; Total registers                 ; 970                                             ;
+; Total pins                      ; 4 / 224 ( 2 % )                                 ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                           ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                                   ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used        ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Hybrid (Rapid Recompile) ; Source File            ;                                ;
+; hard_block:auto_generated_inst ; Auto-generated ; Hybrid (Rapid Recompile) ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Summary                                                                                          ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Partition Name                 ; Rapid Recompile Status ; Netlist Preservation Requested ; Netlist Preservation Achieved ; Notes ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Top                            ; Engaged                ; 99.75% (2020 / 2025)           ; 99.41% (2013 / 2025)          ;       ;
+; hard_block:auto_generated_inst ; Engaged                ; 100.00% (20 / 20)              ; 100.00% (20 / 20)             ;       ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+
+
++-----------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Changed Logic Entities ;
++------------------------+----------------------------------------+
+; Changed Logic Entities ; Number of Changed Nodes                ;
++------------------------+----------------------------------------+
+; |Wi_max_top_wrapper    ; 10                                     ;
++------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                  ;
++-----------------------------+-----------+---------------+-------------------+---------------------------------------------+
+; Name                        ; Partition ; Type          ; Location          ; Status                                      ;
++-----------------------------+-----------+---------------+-------------------+---------------------------------------------+
+; clk1                        ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- clk1                 ; Top       ; Input Pad     ; Unplaced          ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;     -- clk1~input           ; Top       ; Input Buffer  ; Unplaced          ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;                             ;           ;               ;                   ;                                             ;
+; correct                     ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- correct              ; Top       ; Output Pad    ; IOPAD_X0_Y18_N77  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- correct~output       ; Top       ; Output Buffer ; IOOBUF_X0_Y18_N79 ; Preserved from Post-Fit or Imported Netlist ;
+;                             ;           ;               ;                   ;                                             ;
+; ready_unstable              ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- ready_unstable       ; Top       ; Input Pad     ; IOPAD_X33_Y0_N40  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- ready_unstable~input ; Top       ; Input Buffer  ; IOIBUF_X33_Y0_N41 ; Preserved from Post-Fit or Imported Netlist ;
+;                             ;           ;               ;                   ;                                             ;
+; reset_not                   ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- reset_not            ; Top       ; Input Pad     ; Unplaced          ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;     -- reset_not~input      ; Top       ; Input Buffer  ; Unplaced          ; Preserved from Synthesis Netlist (WYSIWYG)  ;
+;                             ;           ;               ;                   ;                                             ;
++-----------------------------+-----------+---------------+-------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                               ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 799                    ;
+;                                             ;                        ;
+; Combinational ALUT usage for logic          ; 888                    ;
+;     -- 7 input functions                    ; 25                     ;
+;     -- 6 input functions                    ; 169                    ;
+;     -- 5 input functions                    ; 219                    ;
+;     -- 4 input functions                    ; 214                    ;
+;     -- <=3 input functions                  ; 261                    ;
+;                                             ;                        ;
+; Dedicated logic registers                   ; 970                    ;
+;                                             ;                        ;
+; I/O pins                                    ; 4                      ;
+;                                             ;                        ;
+; Total DSP Blocks                            ; 0                      ;
+;                                             ;                        ;
+; Total PLLs                                  ; 1                      ;
+;     -- Fractional PLLs                      ; 1                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; reset_not~inputCLKENA0 ;
+; Maximum fan-out                             ; 961                    ;
+; Total fan-out                               ; 7513                   ;
+; Average fan-out                             ; 3.71                   ;
++---------------------------------------------+------------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Warning (125092): Tcl Script File platform/V/img_index.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE platform/V/img_index.qip
+Warning (125092): Tcl Script File platform/V/img_data.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE platform/V/img_data.qip
+Warning (125092): Tcl Script File platform/V/vga_pll.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE platform/V/vga_pll.qip
+Warning (125092): Tcl Script File V/vga_pll.sip not found
+    Info (125063): set_global_assignment -name SIP_FILE V/vga_pll.sip
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+    Info: Processing started: Wed Feb 27 21:31:43 2019
+Info: Command: quartus_cdb --read_settings_files=on --write_settings_files=off Wi_max_top_wrapper -c Wi_max_top_wrapper --merge=on --recompile=on
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "Top"
+Info (35002): Resolved and merged 1 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1476 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 1465 logic cells
+Info: Quartus Prime Partition Merge was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 715 megabytes
+    Info: Processing ended: Wed Feb 27 21:31:52 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:02
+
+

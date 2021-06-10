@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "correct",
+					"strict" : false
+				},
+				{
+					"name" : "ready_unstable",
+					"strict" : false
+				},
+				{
+					"name" : "clk1",
+					"strict" : false
+				},
+				{
+					"name" : "reset_not",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

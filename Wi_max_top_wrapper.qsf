@@ -1,0 +1,124 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+# Date created = 18:19:59  February 20, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Wi_max_top_wrapper_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C7
+set_global_assignment -name TOP_LEVEL_ENTITY Wi_max_top_wrapper
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "MON MAY  5 11:54:18 2014"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X1"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name STRATIXII_CONFIGURATION_DEVICE EPCS64
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_global_assignment -name BOARD "DE0-CV Development Board"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_M9 -to clk1
+set_location_assignment PIN_AA2 -to correct
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SDC_FILE "C:/Users/ahmadosamarady/Desktop/time.sdc"
+set_global_assignment -name VHDL_FILE Wi_max_top_wrapper.vhd
+set_global_assignment -name VHDL_FILE Wi_max_top.vhd
+set_global_assignment -name VHDL_FILE prbs.vhd
+set_global_assignment -name VHDL_FILE modulator.vhd
+set_global_assignment -name VHDL_FILE interleaver.vhd
+set_global_assignment -name VHDL_FILE encoder.vhd
+set_global_assignment -name VERILOG_FILE V/video_sync_generator.v
+set_global_assignment -name VERILOG_FILE V/vga_controller.v
+set_global_assignment -name VERILOG_FILE V/SEG7_LUT_6.v
+set_global_assignment -name VERILOG_FILE V/SEG7_LUT.v
+set_global_assignment -name VERILOG_FILE V/Reset_Delay.v
+set_global_assignment -name QIP_FILE platform/V/img_index.qip
+set_global_assignment -name QIP_FILE platform/V/img_data.qip
+set_global_assignment -name QIP_FILE platform/V/vga_pll.qip
+set_global_assignment -name SIP_FILE V/vga_pll.sip
+set_global_assignment -name QIP_FILE Clock_100MHz.qip
+set_global_assignment -name SIP_FILE Clock_100MHz.sip
+set_global_assignment -name LL_ENABLED ON -section_id Launch_Pong
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id Launch_Pong
+set_global_assignment -name LL_STATE LOCKED -section_id Launch_Pong
+set_global_assignment -name LL_RESERVED OFF -section_id Launch_Pong
+set_global_assignment -name LL_CORE_ONLY OFF -section_id Launch_Pong
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id Launch_Pong
+set_global_assignment -name LL_IGNORE_IO_BANK_SECURITY_CONSTRAINT OFF -section_id Launch_Pong
+set_global_assignment -name LL_PR_REGION OFF -section_id Launch_Pong
+set_global_assignment -name LL_ROUTING_REGION_EXPANSION_SIZE 2147483647 -section_id Launch_Pong
+set_global_assignment -name LL_WIDTH 10 -section_id Launch_Pong
+set_global_assignment -name LL_HEIGHT 10 -section_id Launch_Pong
+set_global_assignment -name LL_ORIGIN X1_Y1 -section_id Launch_Pong
+set_global_assignment -name LL_ENABLED ON -section_id Capture_Pong
+set_global_assignment -name LL_AUTO_SIZE OFF -section_id Capture_Pong
+set_global_assignment -name LL_STATE LOCKED -section_id Capture_Pong
+set_global_assignment -name LL_RESERVED OFF -section_id Capture_Pong
+set_global_assignment -name LL_CORE_ONLY OFF -section_id Capture_Pong
+set_global_assignment -name LL_SECURITY_ROUTING_INTERFACE OFF -section_id Capture_Pong
+set_global_assignment -name LL_IGNORE_IO_BANK_SECURITY_CONSTRAINT OFF -section_id Capture_Pong
+set_global_assignment -name LL_PR_REGION OFF -section_id Capture_Pong
+set_global_assignment -name LL_ROUTING_REGION_EXPANSION_SIZE 2147483647 -section_id Capture_Pong
+set_global_assignment -name LL_WIDTH 10 -section_id Capture_Pong
+set_global_assignment -name LL_HEIGHT 10 -section_id Capture_Pong
+set_global_assignment -name LL_ORIGIN X45_Y35 -section_id Capture_Pong
+set_instance_assignment -name LL_MEMBER_OF Launch_Pong -to "wimax:my_wimax|encoder:my_encoder|pong" -section_id Launch_Pong
+set_global_assignment -name VHDL_FILE output_files/debouncer.vhd
+set_instance_assignment -name LL_MEMBER_OF Capture_Pong -to "wimax:my_wimax|encoder:my_encoder|x" -section_id Capture_Pong
+set_instance_assignment -name LL_MEMBER_OF Capture_Pong -to "wimax:my_wimax|encoder:my_encoder|y" -section_id Capture_Pong
+set_location_assignment PIN_U7 -to reset_not
+set_location_assignment PIN_U13 -to ready_unstable
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
